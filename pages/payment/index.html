@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Book Rental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assests/styles/styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <!-- Header -->
+    <div class="header-container">
+        <header class="header">
+            <div class="logo" onclick="window.location.href='../../index.html'">
+              <img src="../../assests/images/logo.svg" alt="Logo">
+            </div>
+        <div class="search-container">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search by Book name">
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../../index.html">Home</a>
+            <a href="../../pages/mybooks/index.html">My Books</a>
+            <button class="login-btn" onclick="window.location.href='../../pages/login/index.html'">Log in/ Sign up</button>
+        </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-btn" onclick="window.location.href='../../index.html'">
+            <span>←</span>
+            <span>Go back to Home</span>
+        </button>
+
+        <!-- Page Title -->
+        <h1 class="page-title">Payment Successful!</h1>
+
+        <!-- Progress Indicator -->
+        <div class="progress-wrapper">
+            <div class="progress-container">
+                <div class="progress-step">
+                    <div class="progress-circle active">✓</div>
+                    <span class="progress-label">Select Book</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="progress-circle active">✓</div>
+                    <span class="progress-label">Enter Details</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step">
+                    <div class="progress-circle active">✓</div>
+                    <span class="progress-label">Payment</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-success">
+            <img src="../../assests/images/tickmark.svg" alt="">
+            <h3> Your payment was successful, and Memories of the Sword is now yours!</h3>
+            <button class="login-btn" id="submitBtn">Start Reading</button>
+        </div>
+    </div>
+    
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Subscribe to Get<br>The Latest<br>Updates</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter Email" required>
+                <button class="login-btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo"><img src="../../assests/images/Logo-white.svg" alt="Logo" onclick="window.location.href='../../index.html'"></div>
+                <div class="footer-center">
+                    2017-2024 ebook.inc
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M15.4999 21.9446C19.059 21.9446 21.9443 19.0592 21.9443 15.5001C21.9443 11.9409 19.059 9.05566 15.4999 9.05566C11.9407 9.05566 9.05542 11.9409 9.05542 15.5001C9.05542 19.0592 11.9407 21.9446 15.4999 21.9446Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.4999 21.9446C19.059 21.9446 21.9443 19.0592 21.9443 15.5001C21.9443 11.9409 19.059 9.05566 15.4999 9.05566C11.9407 9.05566 9.05542 11.9409 9.05542 15.5001C9.05542 19.0592 11.9407 21.9446 15.4999 21.9446Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444Z" stroke="white" stroke-width="2"/><path d="M1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444Z" stroke="black" stroke-opacity="0.2" stroke-width="2"/><path d="M24.3611 6.65511L24.3772 6.63721" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.3611 6.65511L24.3772 6.63721" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.8892 29.9999C13.8892 25.1665 13.8892 20.3332 13.8892 15.4999C13.8892 11.9756 14.6947 9.05542 20.3336 9.05542" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.8892 29.9999C13.8892 25.1665 13.8892 20.3332 13.8892 15.4999C13.8892 11.9756 14.6947 9.05542 20.3336 9.05542" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.6667 17.1113H13.889H20.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.6667 17.1113H13.889H20.3334" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><g clip-path="url(#clip0_737_1142)">
+                       <path d="M23.8391 3H28.2858L18.571 14.1038L30 29.2132H21.0509L14.0421 20.0492L6.02227 29.2132H1.57258L11.9636 17.3366L1 3H10.1757L16.5113 11.376L23.8391 3ZM22.2784 26.5515H24.7425L8.83697 5.52204H6.19298L22.2784 26.5515Z" fill="white"/>
+                       <path d="M23.8391 3H28.2858L18.571 14.1038L30 29.2132H21.0509L14.0421 20.0492L6.02227 29.2132H1.57258L11.9636 17.3366L1 3H10.1757L16.5113 11.376L23.8391 3ZM22.2784 26.5515H24.7425L8.83697 5.52204H6.19298L22.2784 26.5515Z" fill="black" fill-opacity="0.2"/></g><defs>
+                       <clipPath id="clip0_737_1142">
+                       <rect width="29" height="26.2132" fill="white" transform="translate(1 3)"/></clipPath></defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Blog/Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">List an Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assests/script/script.js"></script>
+</body>
+</html>

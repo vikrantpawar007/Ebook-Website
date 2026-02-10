@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books - eBook Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assests/styles/styles.css">
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <!-- Header -->
+    <div class="header-container">
+        <header class="header">
+            <div class="logo" onclick="window.location.href='../../index.html'">
+              <img src="../../assests/images/logo.svg" alt="Logo">
+            </div>
+        <div class="search-container">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search by Book name">
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="../../index.html">Home</a>
+            <a href="../../pages/mybooks/index.html">My Books</a>
+            <button class="login-btn" onclick="window.location.href='../../pages/login/index.html'">Log in/ Sign up</button>
+        </nav>
+        </header>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-container">
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="liked">Liked</button>
+            <button class="filter-tab" data-filter="buyed">Buyed</button>
+            <button class="filter-tab" data-filter="rented">Rented</button>
+        </div>
+    </div>
+
+    <!-- Books Grid -->
+    <div class="mybooks-container">
+        <div class="mybooks-grid">
+            <!-- Book 1 -->
+            <div class="book-item" data-category="liked" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/Memoriesofswaord.png" alt="Memories of the Sword" class="book-cover">
+                    <button class="favorite-btn liked">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Memories of the Sword</span>
+                        <div class="book-rating">⭐ 4.3</div>
+                    </div>
+                    <div class="book-author">By John Myers</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-item" data-category="liked" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/lordoftherings.png" alt="Diana & Jack" class="book-cover">
+                    <button class="favorite-btn liked">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>The Lord of the Rings</span>
+                        <div class="book-rating">⭐ 4.8</div>
+                    </div>
+                    <div class="book-author">By J.R.R. Tolkien</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-item" data-category="liked" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/modernabstrctposter.png" alt="Celtic Tales" class="book-cover">
+                    <button class="favorite-btn liked">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Modern Abstract Poster</span>
+                        <div class="book-rating">⭐ 4.5</div>
+                    </div>
+                    <div class="book-author">By Vikrant Pawar</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book-item" data-category="all" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/simpleandminimalistic.png" alt="Simple & Minimalist" class="book-cover">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Simple & Minimalist Way</span>
+                        <div class="book-rating">⭐ 2.3</div>
+                    </div>
+                    <div class="book-author">By Nikita Gill</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="book-item" data-category="liked" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/planttreeforthefuture.png" alt="Plant Trees for the Future" class="book-cover">
+                    <button class="favorite-btn liked">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Plant Trees for the Future</span>
+                        <div class="book-rating">⭐ 4.3</div>
+                    </div>
+                    <div class="book-author">By John Myers</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="book-item" data-category="liked" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/customizeyourautumn.png" alt="customizeyourautumn" class="book-cover">
+                    <button class="favorite-btn liked">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Customize Your Autumn</span>
+                        <div class="book-rating">⭐ 2.8</div>
+                    </div>
+                    <div class="book-author">By J.R.R. Tolkien</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="book-item" data-category="liked" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/designedforwork.png" alt="designedforwork" class="book-cover">
+                    <button class="favorite-btn liked">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Designed for Work</span>
+                        <div class="book-rating">⭐ 4.9</div>
+                    </div>
+                    <div class="book-author">By Vikrant Pawar</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Book 8 -->
+            <div class="book-item" data-category="all" data-link="productpage.html">
+                <div class="book-cover-wrapper">
+                    <img src="../../assests/images/birdpark.png" alt="birdpark" class="book-cover">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <span>Bird Park</span>
+                        <div class="book-rating">⭐ 3.3</div>
+                    </div>
+                    <div class="book-author">By Nikita Gill</div>
+                </div>
+                <button class="add-to-cart-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Subscribe to Get<br>The Latest<br>Updates</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter Email" required>
+                <button class="login-btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo"><img src="../../assests/images/Logo-white.svg" alt="Logo" onclick="window.location.href='../../index.html'"></div>
+                <div class="footer-center">
+                    2017-2024 ebook.inc
+                </div>
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M15.4999 21.9446C19.059 21.9446 21.9443 19.0592 21.9443 15.5001C21.9443 11.9409 19.059 9.05566 15.4999 9.05566C11.9407 9.05566 9.05542 11.9409 9.05542 15.5001C9.05542 19.0592 11.9407 21.9446 15.4999 21.9446Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.4999 21.9446C19.059 21.9446 21.9443 19.0592 21.9443 15.5001C21.9443 11.9409 19.059 9.05566 15.4999 9.05566C11.9407 9.05566 9.05542 11.9409 9.05542 15.5001C9.05542 19.0592 11.9407 21.9446 15.4999 21.9446Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444Z" stroke="white" stroke-width="2"/><path d="M1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444Z" stroke="black" stroke-opacity="0.2" stroke-width="2"/><path d="M24.3611 6.65511L24.3772 6.63721" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.3611 6.65511L24.3772 6.63721" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M30 9.05556V21.9444C30 26.3934 26.3934 30 21.9444 30H9.05556C4.6066 30 1 26.3934 1 21.9444V9.05556C1 4.6066 4.6066 1 9.05556 1H21.9444C26.3934 1 30 4.6066 30 9.05556Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.8892 29.9999C13.8892 25.1665 13.8892 20.3332 13.8892 15.4999C13.8892 11.9756 14.6947 9.05542 20.3336 9.05542" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.8892 29.9999C13.8892 25.1665 13.8892 20.3332 13.8892 15.4999C13.8892 11.9756 14.6947 9.05542 20.3336 9.05542" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.6667 17.1113H13.889H20.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.6667 17.1113H13.889H20.3334" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><g clip-path="url(#clip0_737_1142)">
+                       <path d="M23.8391 3H28.2858L18.571 14.1038L30 29.2132H21.0509L14.0421 20.0492L6.02227 29.2132H1.57258L11.9636 17.3366L1 3H10.1757L16.5113 11.376L23.8391 3ZM22.2784 26.5515H24.7425L8.83697 5.52204H6.19298L22.2784 26.5515Z" fill="white"/>
+                       <path d="M23.8391 3H28.2858L18.571 14.1038L30 29.2132H21.0509L14.0421 20.0492L6.02227 29.2132H1.57258L11.9636 17.3366L1 3H10.1757L16.5113 11.376L23.8391 3ZM22.2784 26.5515H24.7425L8.83697 5.52204H6.19298L22.2784 26.5515Z" fill="black" fill-opacity="0.2"/></g><defs>
+                       <clipPath id="clip0_737_1142">
+                       <rect width="29" height="26.2132" fill="white" transform="translate(1 3)"/></clipPath></defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Blog/Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">List an Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assests/script/script.js"></script>
+</body>
+</html>
